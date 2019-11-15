@@ -1,7 +1,7 @@
 /*
  *  Nicholas Borrelli 2023
  */
-package patternmaker;
+
 import java.util.Scanner;
 public class PatternMaker {
     public static void main(String[] args){

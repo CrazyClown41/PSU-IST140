@@ -2,7 +2,6 @@
  * @author Nicholas Borrelli 2023
  */
 
-package ecommerceapp;
 import java.util.Scanner;
 import java.util.Random;
 public class ECommerceApp {

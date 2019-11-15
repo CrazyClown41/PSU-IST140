@@ -1,4 +1,3 @@
-package conesurfacearea;
 import java.util.Scanner;
 public class ConeSurfaceArea {
     public static void main(String[]args){

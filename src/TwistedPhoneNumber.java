@@ -1,4 +1,3 @@
-package twistedphonennumber;
 import java.util.Scanner;
 public class TwistedPhoneNumber {
     public static void main(String[]args){

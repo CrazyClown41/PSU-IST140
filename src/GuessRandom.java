@@ -1,4 +1,3 @@
-package guessrandom;
 import java.util.Scanner;
 public class GuessRandom {
     public static void main(String[] args){

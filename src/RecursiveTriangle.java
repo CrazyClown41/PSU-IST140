@@ -2,7 +2,6 @@
  * @author Nicholas Borrelli 2023
  */
 
-package recursivetriangle;
 import java.util.Scanner;
 public class RecursiveTriangle {
     /**

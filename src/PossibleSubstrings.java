@@ -1,7 +1,7 @@
 /*
  *  Nicholas Borrelli 2023
  */
-package possiblesubstrings;
+
 import java.util.Scanner;
 public class PossibleSubstrings {
     public static void main (String[] args){

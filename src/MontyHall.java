@@ -1,4 +1,3 @@
-package montyhall;
 import java.util.Scanner;
 public class MontyHall {
     public static void main(String[] args){

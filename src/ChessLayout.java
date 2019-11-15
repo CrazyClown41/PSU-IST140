@@ -1,4 +1,3 @@
-package chesslayout;
 import java.util.Scanner;
 public class ChessLayout {
     public static void main (String[] args){

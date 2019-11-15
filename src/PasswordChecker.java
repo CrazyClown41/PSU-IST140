@@ -1,7 +1,7 @@
 /*
  *  Nicholas Borrelli 2023
  */
-package passwordchecker;
+
 import java.util.Scanner;
 /**
  *
