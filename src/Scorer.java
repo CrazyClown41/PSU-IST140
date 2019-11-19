@@ -1,32 +1,44 @@
 import java.util.Scanner;
 public class Scorer {
-    public static void main(String[] args){
+
+    public static double[][] getNums() {
         Scanner scan = new Scanner(System.in);
-
-        double [][] scores = new double[3][3];
-        double value = 0;
-
+        double[][] scores = new double[3][3];
         int i = 0;
-        int j;
 
         while (i < 3) {
-            j = 0;
+            int j = 0;
             while (j < 3) {
                 System.out.print("Enter a number: ");
-                value = scan.nextDouble();
+                double value = scan.nextDouble();
                 scores[i][j] = value;
                 j++;
             }
             i++;
         }
+        return scores;
+    }
 
-        for (i = 0; i < 3; i++) {
-            int average = 0;
-            for (j = 0; j < 3; j++) {
+
+    public static double computeAvg(double[][] scores) {
+        double value;
+        double average = 0;
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
                 value = scores[i][j];
                 average += value;
             }
-            System.out.println(average / 3);
         }
+        return average;
     }
+
+
+    public static void printResults(double average){
+        System.out.printf("The average is: %.2f", (average / 3));
+    }
+
+    public static void main(String[] args){
+        printResults(computeAvg(getNums()));
+    }
+
 }
