@@ -44,8 +44,12 @@ public class WeightedAvgDropSmallest {
         return average;
     }
 
+    public static void printResults(double average){
+        System.out.printf("The average is: %.2f", average);
+    }
+
     public static void main(String[] args) {
         System.out.println(" ");
-        System.out.printf("The average is: %.2f", averageCalc(numbers(), drop(), weight()));
+        printResults(averageCalc(numbers(), drop(), weight()));
     }
 }
