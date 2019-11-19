@@ -1,6 +1,10 @@
 import java.util.Scanner;
 public class Scorer {
 
+    /**
+     * Scans for the 9 ints for the array
+     * @return scores which is a 2D Array (3x3)
+     */
     public static double[][] getNums() {
         Scanner scan = new Scanner(System.in);
         double[][] scores = new double[3][3];
@@ -19,26 +23,42 @@ public class Scorer {
         return scores;
     }
 
+    /**
+     * Prints the 2D Array and the average of each line
+     * @param scores which is a 2D Array (3x3)
+     * @return scores so computeAvg can call it in the main method
+     */
 
-    public static double computeAvg(double[][] scores) {
-        double value;
-        double average = 0;
+    public static double[][] printResults(double[][] scores) {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                value = scores[i][j];
-                average += value;
+                System.out.print(scores[i][j] + " ");
             }
+            System.out.println();
         }
-        return average;
+        return scores;
     }
 
+    /**
+     * Calculates the average of each line and then prints the average
+     * @param scores which is a 2D Array (3x3)
+     */
 
-    public static void printResults(double average){
-        System.out.printf("The average is: %.2f", (average / 3));
+    public static void computeAvg(double[][] scores){
+        double[] average = new double[3];
+
+        for(int i = 0; i < 3; i++){
+            average[i] = (scores[i][0] + scores[i][1] + scores[i][2]) / 3;
+            System.out.println("Average of Line " + (i + 1) + " is: " + average[i]);
+        }
     }
 
+    /**
+     *
+     * @param args command-line arguments
+     */
     public static void main(String[] args){
-        printResults(computeAvg(getNums()));
+        computeAvg(printResults(getNums()));
     }
 
 }

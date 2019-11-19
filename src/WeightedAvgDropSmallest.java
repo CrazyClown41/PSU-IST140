@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class WeightedAvgDropSmallest {
 
     /**
-     *
+     * Scans for the doubles from the user and stores them in an ArrayList
      * @return nums which is the ArrayList of numbers scanned by the user
      */
     public static ArrayList numbers() {
@@ -17,7 +17,7 @@ public class WeightedAvgDropSmallest {
     }
 
     /**
-     *
+     * Scans for how many grades to drop from the user
      * @return drop is an int which is scanned from the user on how many grades they want dropped
      */
     public static int drop() {
@@ -28,7 +28,7 @@ public class WeightedAvgDropSmallest {
     }
 
     /**
-     *
+     * Scans for the weight of the grades from the user
      * @return weight of the grades which is scanned from the user
      */
     public static double weight() {
@@ -39,7 +39,7 @@ public class WeightedAvgDropSmallest {
     }
 
     /**
-     *
+     * Removes the minimum value(s) from the ArrayList and calculates the average of the grades and then multiplies the average with the weight
      * @param nums which is the ArrayList of numbers scanned by the user
      * @param drop is an int which is scanned from the user on how many grades they want dropped
      * @param weight of the grades which is scanned from the user
@@ -64,7 +64,7 @@ public class WeightedAvgDropSmallest {
     }
 
     /**
-     *
+     * Prints average
      * @param average of the grades that does not include the dropped grades and is multiplied by the weight
      */
     public static void printResults(double average){
