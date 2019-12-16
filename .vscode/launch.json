@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - AverageWithMethods",
+            "request": "launch",
+            "mainClass": "AverageWithMethods"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MontyHall",
             "request": "launch",
             "mainClass": "MontyHall",
