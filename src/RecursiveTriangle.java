@@ -14,7 +14,7 @@ public class RecursiveTriangle {
         Scanner scan = new Scanner(System.in);
         
         System.out.println("Enter how many rows:");
-        printTriangle(scan.nextInt());
+        //printTriangle(scan.nextInt());
         
         System.out.println("Enter what characters you want as triangle: ");
         String pattern = scan.nextLine();
@@ -32,7 +32,7 @@ public class RecursiveTriangle {
             System.out.print(pattern);  
         }  
         System.out.println(); 
-        printTriangle (sideLength - 1);
+        //printTriangle (sideLength - 1);
 
     }
 }
